@@ -1,57 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>You Metter</title>
-    <link rel="stylesheet" href="output.css" />
-  </head>
-  <body>
-    <div class="login-page h-screen w-full flex items-center justify-center">
-      <div class="w-full max-w-md bg-white shadow-md rounded-md p-6">
-        <div class="flex justify-center mb-6">
-          <div class="bg-purple-600 w-12 h-12 rounded-full"></div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>You Metter</title>
+  <link rel="stylesheet" href="output.css" />
+  <link rel="stylesheet" href="./style/main.css" />
+</head>
+
+<body class="bg-gray-100">
+  <div class="login-page h-screen w-full flex items-center justify-center">
+    <div class="w-full max-w-md bg-white shadow-md rounded-md p-6 animate-fade-in">
+      <div class="flex justify-center mb-6">
+        <div class="w-12 h-12 rounded-full hover:scale-110 transition-transform">
+          <img src="img/Logo.png" alt="" />
         </div>
-        <h1 class="text-xl font-bold text-center mb-4">Sign in</h1>
-        <form>
-          <div class="mb-4">
-            <label for="email" class="block text-sm font-medium text-gray-700"
-              >Email</label
-            >
-            <input
-              id="email"
-              type="email"
-              placeholder="youremail@gmail.com"
-              class="mt-1 w-full px-3 py-2 border border-gray-300 rounded-md focus:ring-purple-500 focus:border-purple-500"
-            />
-          </div>
-          <div class="mb-4">
-            <label
-              for="password"
-              class="block text-sm font-medium text-gray-700"
-              >Password</label
-            >
-            <input
-              id="password"
-              type="password"
-              placeholder="********"
-              class="mt-1 w-full px-3 py-2 border border-gray-300 rounded-md focus:ring-purple-500 focus:border-purple-500"
-            />
-          </div>
-          <button
-            type="submit"
-            class="w-full bg-purple-600 text-white py-2 rounded-md hover:bg-purple-700"
-          >
-            Login
-          </button>
-        </form>
-        <p class="mt-4 text-center text-sm">
-          Don’t have an account?
-          <a href="./pages/signup.html" class="text-purple-600 hover:underline"
-            >Sign Up</a
-          >
-        </p>
       </div>
+      <h1 class="text-xl font-bold text-center mb-4">Sign in</h1>
+      <form>
+        <div class="mb-4">
+          <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
+          <input id="email" type="email" placeholder="youremail@gmail.com"
+            class="mt-1 w-full px-3 py-2 border border-gray-300 rounded-md focus:ring-purple-500 focus:border-purple-500 transition-transform duration-300 hover:scale-105" />
+        </div>
+        <div class="mb-4">
+          <label for="password" class="block text-sm font-medium text-gray-700">Password</label>
+          <input id="password" type="password" placeholder="********"
+            class="mt-1 w-full px-3 py-2 border border-gray-300 rounded-md focus:ring-purple-500 focus:border-purple-500 transition-transform duration-300 hover:scale-105" />
+        </div>
+        <button type="submit"
+          class="w-full bg-purple-600 text-white py-2 rounded-md hover:bg-purple-700 transition-all duration-300 transform hover:scale-105">
+          Login
+        </button>
+      </form>
+      <p class="mt-4 text-center text-sm">
+        Don’t have an account?
+        <a href="./pages/signup.html" class="text-purple-600 hover:underline">Sign Up</a>
+      </p>
     </div>
-  </body>
+  </div>
+</body>
+<script src="js/login.js"></script>
+
 </html>
